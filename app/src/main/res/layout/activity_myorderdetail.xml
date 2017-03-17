@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4">
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="35dp"
+             android:text="Order id"
+             android:layout_marginTop="5dp"
+             />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="35dp"
+              android:text="Order Name"
+              android:layout_marginTop="25dp"
+            ></TextView>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="35dp"
+              android:text="Orderer On:"
+              android:layout_marginTop="25dp"
+              ></TextView>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="35dp"
+              android:text="Service Name:"
+              android:layout_marginTop="25dp"
+              ></TextView>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="25dp"
+              android:text="Service Type:"
+              android:layout_marginTop="25dp"
+              ></TextView>
+          <TextView
+              android:layout_width="160dp"
+              android:layout_height="25dp"
+              android:text="Source:"
+              android:layout_marginTop="25dp"
+          />
+
+        <TextView
+           android:layout_width="160dp"
+           android:layout_height="25dp"
+           android:text="Destination:"
+            android:layout_marginTop="25dp"
+            android:id="@+id/textView23">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Size:"
+           android:layout_marginTop="30dp"/>
+
+        <TextView
+             android:layout_width="match_parent"
+             android:layout_height="25dp"
+             android:text="Payment By:"
+            android:layout_marginTop="25dp"
+           ></TextView>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="25dp"
+              android:text="Delivery Type:"
+              android:layout_marginTop="25dp"
+              ></TextView>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="25dp"
+              android:text="Delivered On:"
+              android:layout_marginTop="25dp"
+             >
+          </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Payment Rs."
+            android:layout_marginTop="25dp" />
+</LinearLayout >
+    </ScrollView>
+
+
+
+
+
+
