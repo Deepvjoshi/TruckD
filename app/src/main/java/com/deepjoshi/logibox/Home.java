@@ -90,10 +90,15 @@ public class Home extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
             Intent intent=new Intent(Home.this,Track_Activity.class);
             startActivity(intent);
-        } else if (id == R.id.nav_share) {
-            Intent intent=new Intent(Home.this,MainMyOrderListActivity.class);
+        } else if (id == R.id.nav_myOrder) {
+            Intent intent = new Intent(Home.this, MainMyOrderListActivity.class);
             startActivity(intent);
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_share) {
+                Intent intent=new Intent(Home.this,Setting_Activity.class);
+                startActivity(intent);
+            }
+
+       else if (id == R.id.nav_send) {
             getSharedPreferences("testpref",MODE_PRIVATE).edit().clear().apply();
             Intent intent = new Intent(Home.this,Log_in.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
