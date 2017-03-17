@@ -6,4 +6,103 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string-array name="select_state">
+        <item>Select State</item>
+        <item>s/001</item>
+        <item>s/002</item>
+        <item>s/003</item>
+        <item>s/004</item>
+        <item>s/005</item>
+    </string-array>
+    <string-array name="select_city">
+        <item>Select City</item>
+        <item>c/01</item>
+        <item>c/02</item>
+        <item>c/03</item>
+        <item>c/04</item>
+        <item>c/05</item>
+    </string-array><string-array name="select_area">
+    <item>Select Area</item>
+    <item>a/001</item>
+    <item>a/002</item>
+    <item>a/003</item>
+    <item>a/004</item>
+    <item>a/005</item>
+</string-array>
+    <string-array name="select_type">
+        <item>Select Type</item>
+        <item>Admin</item>
+        <item>Driver</item>
+        <item>User</item>
+        <item>Servey Engineer</item>
+    </string-array>
+    <string-array name="select_sec">
+        <item>Select Security Question</item>
+        <item>your mother name</item>
+        <item>your parents name</item>
+        <item>your favourite city</item>
+        <item>your favourite country</item>
+    </string-array>
+    <string-array name="select_amount">
+        <item>Select amount of stuff</item>
+        <item>1 BHK(approx 600Sqft)</item>
+        <item>2 BHK(approx 1000Sqft)</item>
+        <item>3 BHK(approx 1400Sqrt)</item>
+        <item>4 BHK(approx 1800Sqft)</item>
+    </string-array>
+    <string-array name="select_boxes">
+        <item>Select boxes</item>
+        <item>Minimalist(25 Boxes)</item>
+        <item>Regular(30 Boxes)</item>
+        <item>Collector(35 Boxes)</item>
+    </string-array>
+    <string-array name="select_packaging">
+        <item>Recycled Packaging Paper</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="select_wrap">
+        <item>Bubble Wrap</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="select_mattress">
+        <item>Mattress cover</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="select_sofa">
+        <item>Chair cover</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="select_chair">
+        <item>Chair cover</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="select_zip_ties">
+        <item>Zip Ties</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
 </resources>

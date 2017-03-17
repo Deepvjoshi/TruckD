@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:id="@+id/activity_track_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.hp.logistics.Track_Activity"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Track Detail"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+ <ImageView
+     android:layout_width="73dp"
+     android:layout_height="50dp"
+     android:layout_marginTop="40dp"
+     android:layout_marginLeft="20dp"
+     android:src="@drawable/ic_check_circle_black_24dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Packed"
+            android:textSize="30dp"
+            android:gravity="left"
+            android:paddingTop="45dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <ImageView
+            android:layout_width="73dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_check_circle_black_24dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Dispatch"
+            android:textSize="30dp"
+            android:gravity="left"
+            android:paddingTop="15dp"/>
+           </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <ImageView
+            android:layout_width="73dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_check_circle_black_24dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Out For Delivery"
+            android:textSize="30dp"
+            android:gravity="left"
+            android:paddingTop="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <ImageView
+            android:layout_width="73dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_check_circle_black_24dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Delivered"
+            android:textSize="30dp"
+            android:gravity="left"
+            android:paddingTop="15dp"/>
+    </LinearLayout>
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"></DatePicker>
+</LinearLayout>
+</ScrollView>

@@ -35,7 +35,15 @@
         </activity>
         <activity android:name=".ServiceList">
 
-        </activity>
+        </activity><activity android:name=".myorderdetail" />
+        <activity android:name=".MainMyOrderListActivity" />
+
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".Place_Add_Order_Activity" />
+        <activity android:name=".Place_Order_Activity" />
+        <activity android:name=".Setting_Activity" />
+        <activity android:name=".Track_Activity" />
+        <activity android:name=".Review_Activity"/>
         <activity android:name=".Cargo_Activity" />
         <activity android:name=".Parcel_Activity" />
         <activity android:name=".Courier_Activity" />
