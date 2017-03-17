@@ -38,7 +38,8 @@
         </activity><activity android:name=".myorderdetail" />
         <activity android:name=".MainMyOrderListActivity" />
 
-        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".ForgotPasswordActivity"            android:theme="@style/Theme.AppCompat.NoActionBar"
+        />
         <activity android:name=".Place_Add_Order_Activity" />
         <activity android:name=".Place_Order_Activity" />
         <activity android:name=".Setting_Activity" />
