@@ -36,10 +36,10 @@ android:weightSum="2"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email Id"
+        android:hint="User Name"
         android:textColor="#aab1dada"
         android:textColorHint="#aab1dada"
-android:inputType="textEmailAddress"
+android:inputType="text"
         android:id="@+id/login_edittext_eid"
         />
     <EditText

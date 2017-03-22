@@ -3,6 +3,7 @@ package com.deepjoshi.logibox;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +15,11 @@ import com.deepjoshi.logibox.AsyncTasks.WebserviceCall;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import com.deepjoshi.logibox.Helper.Utils;
+import  com.deepjoshi.logibox.Model.LogInModel;
+import com.deepjoshi.logibox.Model.Log_InModel;
+import com.google.gson.Gson;
 
 public class Log_in extends AppCompatActivity {
 
@@ -37,6 +43,8 @@ public class Log_in extends AppCompatActivity {
         btFg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
                 Intent i =new Intent(Log_in.this,ForgotPasswordActivity.class);
                 startActivity(i);
             }
@@ -62,47 +70,38 @@ public class Log_in extends AppCompatActivity {
                 } else
 
                 {
-                    Toast.makeText(Log_in.this, "Unauthorized user", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(Log_in.this,Home.class);
-                            startActivity(intent);
-//                    JSONObject object = new JSONObject();
-//                    try {
-////                        object.put("mode","loginUser");
-//                        object.put("emailId", stremail);
-//                        object.put("password", strpwd);
-//                    } catch (JSONException e) {
-//                        e.printStackTrace();
-//                    }
-//
-//                    String jsonRequest = String.valueOf(object);
-////                    String URL = "http://development.ifuturz.com/core/FLAT_TEST/stone_galary/admin/webservice.php";
-//                    String URL = "http://development.ifuturz.com/core/FLAT_TEST/ecart_new/admin/webservice.php";
-//                    new WebserviceCall(Log_in.this, URL, jsonRequest, "Loading...", true, new AsyncResponse() {
-//                        @Override
-//                        public void onSuccess(final String message, JSONArray jsonData) {
-//                            Toast.makeText(Log_in.this, message, Toast.LENGTH_SHORT).show();
-//                            try {
-//                                getSharedPreferences("testpref",MODE_PRIVATE).edit().putString("id",jsonData.getJSONObject(0).getString("id")).apply();
-//                            } catch (JSONException e) {
-//                                e.printStackTrace();
-//                            }
-//                            Intent intent = new Intent(Log_in.this,MainActivity.class);
-//                            startActivity(intent);
-//                        }
-//
-//                        @Override
-//                        public void onFailure(String message) {
-//                            Toast.makeText(Log_in.this, message, Toast.LENGTH_SHORT).show();
-//                        }
-//                    }).execute();
-//
-              }
+
+
+
+                    String[]keys=new String[]{"mode","username","psw"};
+                    String[]values=new String[]{"login",stremail,strpwd};
+                    String jsonRequest= Utils.createJsonRequest(keys,values);
+
+                    String URL = "http://vnurture.in/logistic/webservice.php";
+                    new WebserviceCall(Log_in.this, URL, jsonRequest, "Logging in", true, new AsyncResponse() {
+                        @Override
+                        public void onCallback(String response) {
+                            Log.d("myapp",response);
+                            Log_InModel model = new Gson().fromJson(response,Log_InModel.class);
+                            Toast.makeText(Log_in.this,model.getMessage() , Toast.LENGTH_SHORT).show();
+                            if (model.getStatus()==1)
+                            {
+                                Intent intent=new Intent(Log_in.this,Home.class);
+
+                                startActivity(intent);
+                            }
+
+                        }
+                    }).execute();
+
+
+                }
 //
             }
 //
         });
-                }
-
-
-
     }
+
+
+
+}

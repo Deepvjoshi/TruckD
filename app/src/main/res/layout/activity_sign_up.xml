@@ -1,124 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_sign_up"
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:weightSum="3"
-    android:background="#060436"
-    android:orientation="vertical"
-    tools:context="com.deepjoshi.logibox.Sign_up">
-
-    <TextView
-        android:layout_marginTop="10dp"
-        android:paddingTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Sign Up"
-        android:textSize="50dp"
-        android:textColor="#aab1dada"
-        android:fontFamily="cursive"
-        android:id="@+id/textView" />
-
-<LinearLayout
-    android:layout_weight="1"
-    android:gravity="center"
-    android:paddingRight="50dp"
-    android:paddingLeft="30dp"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="wrap_content">
-    <EditText
-        android:hint="User Name"
-
-        android:paddingTop="30dp"
-
-        android:textColor="#aab1dada"
-        android:textColorHint="#aab1dada"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/signup_ev_usnm"
-        />
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+android:background="#060436">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:fontFamily="cursive"
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Sign up">
+            </TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Firstname"
+                android:backgroundTint="#AA0A1240"
+                android:textColor="#aab1dada"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:id="@+id/edittext_name_edittext"
+                android:minHeight="47dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Lastname"
+                android:backgroundTint="#AA0A1240"
+                android:textColor="#aab1dada"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+
+                android:id="@+id/edittext_lastname_edittext"
+                android:minHeight="50dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Address"
+                android:backgroundTint="#AA0A1240"
+                android:textColor="#aab1dada"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/edittext_address_edittext"
+                android:minHeight="50dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Username"
+                android:backgroundTint="#AA0A1240"
+                android:textColor="#aab1dada"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:id="@+id/edittext_username_edittext"
+                android:minHeight="50dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="EMail"
+                android:backgroundTint="#AA0A1240"
+                android:textColor="#aab1dada"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:id="@+id/editext_email_edittext"
+                android:minHeight="50dp" />
+            /  <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:backgroundTint="#AA0A1240"
+            android:textColor="#aab1dada"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:id="@+id/edittext_pass_edittext"
+
+
+            android:minHeight="50dip" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Confirm password"
+                android:backgroundTint="#AA0A1240"
+                android:textColor="#aab1dada"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:id="@+id/edittext_conpassword_edittext"
+                android:minHeight="50dip" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/data_spinner_type"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+            </Spinner>
 
 
 
-    <EditText
-        android:hint="Email Id"
-
-        android:paddingTop="30dp"
-
-        android:textColor="#aab1dada"
-        android:textColorHint="#aab1dada"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/signup_ev_eid"
-        />
 
 
 
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Contact number"
+                android:backgroundTint="#AA0A1240"
+                android:textColor="#aab1dada"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:id="@+id/editText_contact_edittext"
+                android:minHeight="50dip" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/data_spinner_sec_id"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+            </Spinner>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Answer"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:id="@+id/edittext_answer_edittext"
+                android:backgroundTint="#AA0A1240"
+                android:textColor="#aab1dada"
+                android:minHeight="50dp"
+                />
 
 
 
-    <EditText
-        android:hint="Address"
-
-        android:paddingTop="30dp"
-
-
-        android:textColor="#aab1dada"
-        android:textColorHint="#aab1dada"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/signup_ev_add"
-        />
 
 
 
-    <EditText
-        android:hint="Password"
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Sign up"
+                android:textColor="@android:color/white"
+                android:id="@+id/signup_btn_signup">
 
-        android:paddingTop="30dp"
-        android:maxEms="1"
-        android:maxLength="4"
-        android:inputType="textWebPassword"
-        android:textColor="#aab1dada"
-        android:textColorHint="#aab1dada"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/signup_ev_pw"
-        />
+            </Button>
 
+        </LinearLayout>
 
+    </LinearLayout>
 
-    <EditText
-        android:hint="ContactNo"
-android:inputType="number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/signup_ev_cn"
-        android:paddingTop="30dp"
-        android:textColor="#aab1dada"
-        android:textColorHint="#aab1dada"
-        />
-</LinearLayout>
-    <Button
-
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Create an accoount "
-        android:layout_gravity="center"
-        android:background="#0000"
-        android:textColor="#aab1dada"
-        android:textSize="20dp"
-        android:id="@+id/signup_createanaccount"
-        />
-
-
-</LinearLayout>
+</ScrollView>

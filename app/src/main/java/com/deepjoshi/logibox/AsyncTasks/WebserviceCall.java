@@ -5,10 +5,6 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.IOException;
 
 import okhttp3.MediaType;
@@ -22,7 +18,7 @@ import okhttp3.Response;
  * Created by Dell on 11-01-2017.
  */
 
-public class WebserviceCall extends AsyncTask<Void,Void,String> {
+public class WebserviceCall extends AsyncTask<Void,Void,String>{
     // interface for response
 
     AsyncResponse delegate;
@@ -33,6 +29,7 @@ public class WebserviceCall extends AsyncTask<Void,Void,String> {
     boolean showDialog = true;
     String URL;
     String jsonBody;
+
     public WebserviceCall(Context context, String URL, String jsonRequestBody, String dialogMessage, boolean showDialog, AsyncResponse delegate){
         this.context = context;
         this.URL = URL;
@@ -62,7 +59,7 @@ public class WebserviceCall extends AsyncTask<Void,Void,String> {
 
         // creating okhttp client
         OkHttpClient client = new OkHttpClient();
-       // client.setConnectTimeout(10L, TimeUnit.SECONDS);
+        // client.setConnectTimeout(10L, TimeUnit.SECONDS);
         // creating request body
         RequestBody body;
         if(jsonBody != null) {
@@ -103,30 +100,32 @@ public class WebserviceCall extends AsyncTask<Void,Void,String> {
         if(s != null){
             // set value to AsyncResponse interface for further proccess in activity
             //  Log.d("myapp",getClass().getSimpleName()+" "+s);
-            if(delegate != null) {
-                try {
-                     JSONObject object = new JSONObject(s);
-                    // check if json has value or not
-                    if(object.length() > 0){
-                        // if json object is not null
-                        if(object.getInt("success") == 1){
-                            // success
-                            delegate.onSuccess(object.getString("message"),object.getJSONArray("data"));
-                        }else{
-                            // failure
-                            delegate.onFailure(object.getString("Fail"));
-                        }
-                    }else{
-                        // failure
-                        delegate.onFailure(object.getString("Fail"));
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }else{
-                // failure
-                delegate.onFailure("Null Response");
-            }
+//            if(delegate != null) {
+//                try {
+//                    JSONObject object = new JSONObject(s);
+//                    // check if json has value or not
+//                    if(object.length() > 0){
+//                        // if json object is not null
+//                        if(object.getInt("success") == 1){
+//                            // success
+//                            delegate.onSuccess(object.getString("message"),object.getJSONArray(modeName));
+//                        }else{
+//                            // failure
+//                            delegate.onFailure(object.getString("Fail"));
+//                        }
+//                    }else{
+//                        // failure
+//                        delegate.onFailure(object.getString("Fail"));
+//                    }
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                }
+//            }else{
+//                // failure
+//                delegate.onFailure("Null Response");
+//            }
+
+            delegate.onCallback(s);
         }else{
             Log.d("myapp",getClass().getSimpleName()+": response null");
         }
