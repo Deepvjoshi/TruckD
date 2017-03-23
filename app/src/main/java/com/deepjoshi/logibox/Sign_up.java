@@ -48,33 +48,7 @@ public class Sign_up extends AppCompatActivity {
 //        final RadioButton femaleRB=(RadioButton)findViewById(R.id.RBfemale );
         final EditText conET=(EditText )findViewById(R.id.editText_contact_edittext );
         final EditText address=(EditText)findViewById(R.id.edittext_address_edittext);
-
-//        spinner_state=(Spinner)findViewById(R.id.data_spinner_state);
-//        final ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this,R.array.select_state, android.R.layout.simple_spinner_item);
-//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        spinner_state.setAdapter(adapter);
-//
-//        spinner_city=(Spinner)findViewById(R.id.data_spinner_city);
-//        String dx[]=getResources().getStringArray(R.array.select_city);
-//        ArrayAdapter<String> adapter1= new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,dx);
-//        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        spinner_city.setAdapter(adapter1);
-//        String dj = spinner_city.getSelectedItem().toString();
-//
-//        spinner_area=(Spinner)findViewById(R.id.data_spinner_area);
-//        ArrayAdapter<CharSequence> adapter2=ArrayAdapter.createFromResource(this,R.array.select_area, android.R.layout.simple_spinner_item);
-//        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        spinner_area.setAdapter(adapter2);
-//        spinner_type=(Spinner)findViewById(R.id.data_spinner_type);
-//        ArrayAdapter<CharSequence> adapter3=ArrayAdapter.createFromResource(this,R.array.select_type, android.R.layout.simple_spinner_item);
-//        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        spinner_type.setAdapter(adapter3);
-//        spinner_sec=(Spinner)findViewById(R.id.data_spinner_sec_id);
-//        ArrayAdapter<CharSequence> adapter4=ArrayAdapter.createFromResource(this,R.array.select_sec, android.R.layout.simple_spinner_item);
-//        adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        spinner_sec.setAdapter(adapter4);
-
-  final EditText username=(EditText)findViewById(R.id.edittext_username_edittext) ;
+        final EditText username=(EditText)findViewById(R.id.edittext_username_edittext) ;
 
         Button btnsignup;
         btnsignup=(Button )findViewById(R.id.signup_btn_signup );
@@ -115,28 +89,8 @@ public class Sign_up extends AppCompatActivity {
                 }
                 else if (!strconfirmpassword.equals(strpassword)) {
                     Toast.makeText(Sign_up.this, "password don't match", Toast.LENGTH_SHORT).show();
-                } else {
-                    JSONObject object = new JSONObject();
-                    try {
-//                        object.put("mode","register");
-                        object.put("firstname", strname);
-//                        object.put("user_profile_pic",
-//                          object.put("email", stremail);
-                        object.put("password", strpassword);
-                        object.put("dob", "");
-                        object.put("username", strname);
-                        object.put("phone", strcontactno);
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-
-                    String jsonRequest = String.valueOf(object);
-                    String URL = "http://development.ifuturz.com/core/FLAT_TEST/stone_galary/admin/webservice.php";
-                       /* String[] keys = new String[]{"mode","Firstname","Lastname","Emailid","ContactNumber","address","password","ConformPassword","Gender","BirthDate","Cityid","Stateid","Countryid"};
-                        String[] values = new String[]{null,strname,strlastname,stremail,strcontactno,null,strpassword,strconfirmpassword,strgender,null,null,null,null};
-                        String jsonRequest = Utils.createJsonRequest(keys,values);
-                        String URL = "http://development.ifuturz.com/core/FLAT_TEST/jwellery/admin/webservice.php";*/
                 }
+
                 String[]keys=new String[]{"mode","fname","lname","address","phone","email","username","psw"};
                 String[]values=new String[]{"Register",strname,strlastname,strlAddrs,strcontactno,stremail,usernamestr,strpassword};
                 String jsonRequest= Utils.createJsonRequest(keys,values);

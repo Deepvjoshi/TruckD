@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#faf8f9"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
    <RelativeLayout
@@ -13,23 +14,28 @@
       <RelativeLayout
           android:layout_width="1000dp"
           android:layout_height="200dp"
-          android:id="@+id/linearLayout">
+          android:id="@+id/linearLayout"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentStart="true">
          <ImageView
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:src="@drawable/cargoa"
-             android:scaleType="centerCrop"
+             android:scaleType="fitStart"
              android:id="@+id/img_cargo"
              />
          <TextView
-             android:layout_width="match_parent"
+             android:layout_width="190dp"
              android:layout_height="wrap_content"
              android:text="Cargo Service"
              android:textSize="40dp"
              android:gravity="center"
              android:textColor="#aa0b0b0b"
-             android:layout_marginTop="120dp"
-             android:id="@+id/tv_cargo"/>
+             android:id="@+id/tv_cargo"
+             android:layout_centerVertical="true"
+             android:textStyle="bold"
+             android:fontFamily="serif-monospace"
+             android:layout_alignParentEnd="true" />
       </RelativeLayout>
 
       <RelativeLayout
@@ -42,17 +48,6 @@
           android:layout_below="@+id/linearLayout"
           android:layout_alignParentStart="true">
 
-         <TextView
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:text="Post Service"
-             android:gravity="left"
-             android:textColor="#fd120404"
-             android:layout_marginEnd="0dp"
-             android:layout_marginRight="100dp"
-             android:layout_marginStart="40dp"
-             android:textSize="25dp"
-             android:id="@+id/tv_post"/>
       </RelativeLayout>
 
 
@@ -66,15 +61,18 @@
           android:layout_alignParentStart="true">
 
          <TextView
-             android:layout_width="match_parent"
+             android:layout_width="167dp"
              android:layout_height="wrap_content"
              android:text="Courier Service"
              android:gravity="left"
              android:layout_marginEnd="0dp"
              android:layout_marginRight="100dp"
              android:layout_marginStart="40dp"
-             android:textSize="25dp"
-             android:id="@+id/tv_courior"/>
+             android:textSize="30dp"
+             android:id="@+id/tv_courior"
+             android:fontFamily="serif-monospace"
+             android:textColor="#aa0b0b0b"
+             android:textStyle="bold"/>
       </LinearLayout>
       <LinearLayout
           android:layout_width="500dp"
@@ -86,13 +84,12 @@
 
 
          <ImageView
-             android:layout_width="100dp"
-             android:layout_height="100dp"
-             android:src="@drawable/courior1"
+             android:id="@+id/img_courier"
+             android:layout_width="204dp"
+             android:layout_height="132dp"
              android:layout_gravity="right"
              android:scaleType="fitCenter"
-             android:id="@+id/img_courier"
-             />
+             android:src="@drawable/courior1" />
       </LinearLayout>
 
       <LinearLayout
@@ -102,47 +99,62 @@
           android:layout_below="@+id/linearLayout2"
           android:layout_alignParentStart="true"
           android:id="@+id/linearLayout3">
-         <ImageView
-             android:layout_width="100dp"
-             android:layout_height="100dp"
-             android:src="@drawable/parcel"
-             android:scaleType="centerCrop"
-             android:layout_marginTop="20dp"
-             android:id="@+id/img_parcel"
-             />
+
          <TextView
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:text="Parcel Service"
-             android:textSize="25dp"
-             android:gravity="center"
              android:id="@+id/tv_parcel"
-             android:layout_marginTop="45dp"/>
+             android:layout_width="wrap_content"
+             android:layout_height="133dp"
+             android:layout_marginLeft="210dp"
+             android:text="Parcel Service"
+             android:textSize="30dp"
+             android:textStyle="bold"
+             android:fontFamily="serif-monospace"/>
       </LinearLayout>
 
       <LinearLayout
           android:layout_width="500dp"
           android:layout_height="90dp"
           android:orientation="vertical"
-          android:layout_above="@+id/linearLayout3"
-          android:layout_alignParentStart="true"
-          android:layout_marginBottom="32dp">
+          android:layout_alignBottom="@+id/img_post"
+          android:layout_marginBottom="18dp">
 
 
-         <ImageView
-             android:layout_width="204dp"
-             android:layout_height="112dp"
-             android:src="@drawable/post"
-             android:id="@+id/img_post"
-             android:layout_marginTop="0dp"
-             android:layout_marginBottom="0dp"
-             android:layout_marginLeft="0dp"
-             android:layout_marginEnd="0dp"
-             android:layout_marginStart="0dp"
-             android:layout_gravity="right"
-             android:scaleType="centerCrop"
-             />
+         <TextView
+             android:id="@+id/tv_post"
+             android:layout_width="167dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentStart="true"
+             android:layout_marginLeft="20dp"
+             android:layout_marginStart="20dp"
+             android:fontFamily="serif-monospace"
+             android:gravity="left"
+             android:text="Post Service"
+             android:textColor="#aa0b0b0b"
+             android:textSize="30dp"
+             android:textStyle="bold" />
       </LinearLayout>
+
+      <ImageView
+          android:id="@+id/img_post"
+          android:layout_width="204dp"
+          android:layout_height="132dp"
+          android:layout_gravity="right"
+          android:layout_marginLeft="0dp"
+          android:scaleType="centerCrop"
+          android:src="@drawable/post"
+          android:layout_below="@+id/linearLayout"
+          android:layout_alignParentEnd="true" />
+
+      <ImageView
+          android:id="@+id/img_parcel"
+          android:layout_width="100dp"
+          android:layout_height="160dp"
+          android:layout_below="@+id/img_post"
+          android:scaleType="fitStart"
+          android:src="@drawable/parcel"
+          android:layout_alignParentStart="true"
+          android:layout_toStartOf="@+id/img_post" />
 
 
    </RelativeLayout>

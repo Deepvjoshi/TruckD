@@ -137,18 +137,6 @@ android:background="#060436">
                 android:gravity="left"
                 android:id="@+id/edittext_conpassword_edittext"
                 android:minHeight="50dip" />
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:id="@+id/data_spinner_type"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                >
-
-            </Spinner>
-
 
 
 
@@ -169,17 +157,7 @@ android:background="#060436">
                 android:gravity="left"
                 android:id="@+id/editText_contact_edittext"
                 android:minHeight="50dip" />
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:id="@+id/data_spinner_sec_id"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                >
 
-            </Spinner>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

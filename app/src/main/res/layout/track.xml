@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_track"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.deepjoshi.logibox.Track">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/cargo"
+    android:scaleType="centerInside"/>
+    <LinearLayout
+    android:backgroundTint="#2d2d7c"
+    android:orientation="vertical"
+    android:layout_marginTop="120dp"
+android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Enter your Order Number"/>
+
+
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/Track_edt_orderNum"
+        android:layout_marginTop="90dp"
+        android:hint="your no"
+        android:textColorHint="#0d0d0e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<Button
+    android:id="@+id/Track_btn"
+    android:textColor="#ffffff"
+    android:text="Next"
+    android:layout_marginTop="40dp"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="30dp" />
+
+</LinearLayout>
+
+</RelativeLayout>

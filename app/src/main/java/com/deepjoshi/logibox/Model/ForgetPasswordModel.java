@@ -6,7 +6,6 @@ package com.deepjoshi.logibox.Model;
 
 public class ForgetPasswordModel {
 
-
     /**
      * status : 1
      * message : Your password has been sent to your registered Email-id.

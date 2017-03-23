@@ -19,42 +19,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity
             android:name=".Sign_up"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
         <activity
             android:name=".Log_in"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name=".ServiceList">
-
-        </activity><activity android:name=".myorderdetail" />
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ServiceList"></activity>
+        <activity android:name=".myorderdetail" />
         <activity android:name=".MainMyOrderListActivity" />
-
-        <activity android:name=".ForgotPasswordActivity"            android:theme="@style/Theme.AppCompat.NoActionBar"
-        />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".Place_Add_Order_Activity" />
         <activity android:name=".Place_Order_Activity" />
         <activity android:name=".Setting_Activity" />
         <activity android:name=".Track_Activity" />
-        <activity android:name=".Review_Activity"/>
+        <activity android:name=".Review_Activity" />
         <activity android:name=".Cargo_Activity" />
         <activity android:name=".Parcel_Activity" />
         <activity android:name=".Courier_Activity" />
         <activity android:name=".Post_Activity" />
-
+        <activity android:name=".Track"></activity>
     </application>
 
 </manifest>

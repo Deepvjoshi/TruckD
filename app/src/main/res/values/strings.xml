@@ -21,14 +21,15 @@
         <item>c/03</item>
         <item>c/04</item>
         <item>c/05</item>
-    </string-array><string-array name="select_area">
-    <item>Select Area</item>
-    <item>a/001</item>
-    <item>a/002</item>
-    <item>a/003</item>
-    <item>a/004</item>
-    <item>a/005</item>
-</string-array>
+    </string-array>
+    <string-array name="select_area">
+        <item>Select Area</item>
+        <item>a/001</item>
+        <item>a/002</item>
+        <item>a/003</item>
+        <item>a/004</item>
+        <item>a/005</item>
+    </string-array>
     <string-array name="select_type">
         <item>Select Type</item>
         <item>Admin</item>

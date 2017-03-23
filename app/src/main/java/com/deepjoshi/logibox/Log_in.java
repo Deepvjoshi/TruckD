@@ -73,8 +73,8 @@ public class Log_in extends AppCompatActivity {
 
 
 
-                    String[]keys=new String[]{"mode","username","psw"};
-                    String[]values=new String[]{"login",stremail,strpwd};
+                    String[]keys=new String[]{"mode","email","psw"};
+                    String[]values=new String[]{"loginUser",stremail,strpwd};
                     String jsonRequest= Utils.createJsonRequest(keys,values);
 
                     String URL = "http://vnurture.in/logistic/webservice.php";
