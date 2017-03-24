@@ -16,51 +16,7 @@
         android:layout_gravity="center"
         android:orientation="vertical"
         android:weightSum="2">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Packaging Supplier and Option"
-            android:textSize="21dp"
-            android:textColor="@color/colorPrimary"
-            android:gravity="center"
-            android:layout_marginTop="10dp"/>
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/data_packaging"
-            android:layout_marginTop="25dp"
-            ></Spinner>
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/data_wrap"
-            android:layout_marginTop="25dp"
-            ></Spinner>
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/data_mattress"
-            android:layout_marginTop="25dp"
-            ></Spinner>
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/data_sofa"
-            android:layout_marginTop="25dp"
-            ></Spinner>
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/data_chair"
-            android:layout_marginTop="25dp"
-            ></Spinner>
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/data_zip_ties"
-            android:layout_marginTop="25dp"
-            ></Spinner>
-        <TextView
+       <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Address Source"

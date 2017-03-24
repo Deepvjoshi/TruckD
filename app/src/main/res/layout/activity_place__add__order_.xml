@@ -76,8 +76,162 @@
                 android:background="@android:color/darker_gray"
                 />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of Boxes"
+                android:textSize="21dp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="left"
+                android:layout_marginTop="30dp"/>
+
+            />
 
 
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/data_packaging"
+                android:layout_marginTop="25dp"
+                ></Spinner>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of Boxes"
+                android:textSize="21dp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="left"
+                android:layout_marginTop="30dp"/>
+
+            />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/data_wrap"
+                android:layout_marginTop="25dp"
+                ></Spinner>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of Boxes"
+                android:textSize="21dp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="left"
+                android:layout_marginTop="30dp"/>
+
+            />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/data_mattress"
+                android:layout_marginTop="25dp"
+                ></Spinner>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of Boxes"
+                android:textSize="21dp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="left"
+                android:layout_marginTop="30dp"/>
+
+            />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/data_sofa"
+                android:layout_marginTop="25dp"
+                ></Spinner>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of Boxes"
+                android:textSize="21dp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="left"
+                android:layout_marginTop="30dp"/>
+
+            />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/data_chair"
+                android:layout_marginTop="25dp"
+                ></Spinner>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of Boxes"
+                android:textSize="21dp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="left"
+                android:layout_marginTop="30dp"/>
+
+            />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/data_zip_ties"
+                android:layout_marginTop="25dp"
+                ></Spinner>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of Boxes"
+                android:textSize="21dp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="left"
+                android:layout_marginTop="30dp"/>
+
+            />
 
             <Button
                 android:layout_width="match_parent"

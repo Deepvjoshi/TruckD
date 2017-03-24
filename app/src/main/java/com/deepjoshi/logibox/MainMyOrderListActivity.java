@@ -30,7 +30,7 @@ public class MainMyOrderListActivity extends AppCompatActivity {
          */
 
         ObjectHolder.myorderModel=new ArrayList<>();
-        MyorderModel model=new MyorderModel() ;
+        MyorderModel model=new MyorderModel();
         model.setOrdername("Furniture Transport");
         model.setFrom("From:ahemdabad");
         model.setTo("To:khambhat");
